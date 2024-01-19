@@ -1,6 +1,6 @@
 //
 //  Friend.swift
-//  ChallengeURLSession
+//  Friendface
 //
 //  Created by Игорь Верхов on 18.09.2023.
 //

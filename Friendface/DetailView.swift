@@ -1,6 +1,6 @@
 //
 //  DetailView.swift
-//  ChallengeURLSession
+//  Friendface
 //
 //  Created by Игорь Верхов on 19.09.2023.
 //
@@ -12,7 +12,7 @@ struct DetailView: View {
     var user: User
     
     var body: some View {
-        NavigationStack {
+//        NavigationStack {
             List {
                 Section("About") {
                         Text(user.about)
@@ -42,7 +42,7 @@ struct DetailView: View {
                     NaviView(user: user)
                 }
             }
-        }
+//        }
     }
 }
 

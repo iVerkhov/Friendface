@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B7847F612AB8B60B0003ABD3 /* ChallengeURLSessionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7847F602AB8B60B0003ABD3 /* ChallengeURLSessionApp.swift */; };
+		B7847F612AB8B60B0003ABD3 /* FriendfaceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7847F602AB8B60B0003ABD3 /* FriendfaceApp.swift */; };
 		B7847F632AB8B60B0003ABD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7847F622AB8B60B0003ABD3 /* ContentView.swift */; };
 		B7847F652AB8B60D0003ABD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7847F642AB8B60D0003ABD3 /* Assets.xcassets */; };
 		B7847F682AB8B60D0003ABD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7847F672AB8B60D0003ABD3 /* Preview Assets.xcassets */; };
@@ -18,8 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B7847F5D2AB8B60B0003ABD3 /* ChallengeURLSession.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeURLSession.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7847F602AB8B60B0003ABD3 /* ChallengeURLSessionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeURLSessionApp.swift; sourceTree = "<group>"; };
+		B7847F5D2AB8B60B0003ABD3 /* Friendface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Friendface.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7847F602AB8B60B0003ABD3 /* FriendfaceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendfaceApp.swift; sourceTree = "<group>"; };
 		B7847F622AB8B60B0003ABD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B7847F642AB8B60D0003ABD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7847F672AB8B60D0003ABD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		B7847F542AB8B60B0003ABD3 = {
 			isa = PBXGroup;
 			children = (
-				B7847F5F2AB8B60B0003ABD3 /* ChallengeURLSession */,
+				B7847F5F2AB8B60B0003ABD3 /* Friendface */,
 				B7847F5E2AB8B60B0003ABD3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,15 +51,15 @@
 		B7847F5E2AB8B60B0003ABD3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B7847F5D2AB8B60B0003ABD3 /* ChallengeURLSession.app */,
+				B7847F5D2AB8B60B0003ABD3 /* Friendface.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B7847F5F2AB8B60B0003ABD3 /* ChallengeURLSession */ = {
+		B7847F5F2AB8B60B0003ABD3 /* Friendface */ = {
 			isa = PBXGroup;
 			children = (
-				B7847F602AB8B60B0003ABD3 /* ChallengeURLSessionApp.swift */,
+				B7847F602AB8B60B0003ABD3 /* FriendfaceApp.swift */,
 				B7847F622AB8B60B0003ABD3 /* ContentView.swift */,
 				B7847F722AB995970003ABD3 /* DetailView.swift */,
 				B7847F742AB9B7040003ABD3 /* NaviView.swift */,
@@ -68,7 +68,7 @@
 				B7847F642AB8B60D0003ABD3 /* Assets.xcassets */,
 				B7847F662AB8B60D0003ABD3 /* Preview Content */,
 			);
-			path = ChallengeURLSession;
+			path = Friendface;
 			sourceTree = "<group>";
 		};
 		B7847F662AB8B60D0003ABD3 /* Preview Content */ = {
@@ -82,9 +82,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B7847F5C2AB8B60B0003ABD3 /* ChallengeURLSession */ = {
+		B7847F5C2AB8B60B0003ABD3 /* Friendface */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B7847F6B2AB8B60D0003ABD3 /* Build configuration list for PBXNativeTarget "ChallengeURLSession" */;
+			buildConfigurationList = B7847F6B2AB8B60D0003ABD3 /* Build configuration list for PBXNativeTarget "Friendface" */;
 			buildPhases = (
 				B7847F592AB8B60B0003ABD3 /* Sources */,
 				B7847F5A2AB8B60B0003ABD3 /* Frameworks */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = ChallengeURLSession;
+			name = Friendface;
 			productName = ChallengeURLSession;
-			productReference = B7847F5D2AB8B60B0003ABD3 /* ChallengeURLSession.app */;
+			productReference = B7847F5D2AB8B60B0003ABD3 /* Friendface.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -107,14 +107,14 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					B7847F5C2AB8B60B0003ABD3 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
-			buildConfigurationList = B7847F582AB8B60B0003ABD3 /* Build configuration list for PBXProject "ChallengeURLSession" */;
+			buildConfigurationList = B7847F582AB8B60B0003ABD3 /* Build configuration list for PBXProject "Friendface" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B7847F5C2AB8B60B0003ABD3 /* ChallengeURLSession */,
+				B7847F5C2AB8B60B0003ABD3 /* Friendface */,
 			);
 		};
 /* End PBXProject section */
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7847F632AB8B60B0003ABD3 /* ContentView.swift in Sources */,
-				B7847F612AB8B60B0003ABD3 /* ChallengeURLSessionApp.swift in Sources */,
+				B7847F612AB8B60B0003ABD3 /* FriendfaceApp.swift in Sources */,
 				B7847F6F2AB8B6210003ABD3 /* User.swift in Sources */,
 				B7847F732AB995970003ABD3 /* DetailView.swift in Sources */,
 				B7847F752AB9B7040003ABD3 /* NaviView.swift in Sources */,
@@ -197,6 +197,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -257,6 +258,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -282,7 +284,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ChallengeURLSession/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Friendface/Preview Content\"";
 				DEVELOPMENT_TEAM = S3NRVWZ375;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -296,7 +298,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = iVerkhov.ChallengeURLSession;
+				PRODUCT_BUNDLE_IDENTIFIER = iVerkhov.Friendface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -311,7 +313,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ChallengeURLSession/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Friendface/Preview Content\"";
 				DEVELOPMENT_TEAM = S3NRVWZ375;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -325,7 +327,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = iVerkhov.ChallengeURLSession;
+				PRODUCT_BUNDLE_IDENTIFIER = iVerkhov.Friendface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,7 +338,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B7847F582AB8B60B0003ABD3 /* Build configuration list for PBXProject "ChallengeURLSession" */ = {
+		B7847F582AB8B60B0003ABD3 /* Build configuration list for PBXProject "Friendface" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7847F692AB8B60D0003ABD3 /* Debug */,
@@ -345,7 +347,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B7847F6B2AB8B60D0003ABD3 /* Build configuration list for PBXNativeTarget "ChallengeURLSession" */ = {
+		B7847F6B2AB8B60D0003ABD3 /* Build configuration list for PBXNativeTarget "Friendface" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B7847F6C2AB8B60D0003ABD3 /* Debug */,

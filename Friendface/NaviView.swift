@@ -1,6 +1,6 @@
 //
 //  NaviView.swift
-//  ChallengeURLSession
+//  Friendface
 //
 //  Created by Игорь Верхов on 19.09.2023.
 //

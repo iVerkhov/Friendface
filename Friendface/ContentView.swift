@@ -1,6 +1,6 @@
 //
-//  ContentView.swift
-//  ChallengeURLSession
+//  Friendface.swift
+//  Friendface
 //
 //  Created by Игорь Верхов on 18.09.2023.
 //
@@ -23,16 +23,18 @@ struct ContentView: View {
                                 .foregroundColor(user.isActive ? .green : .gray)
                         }
                     }
-                    .navigationDestination(for: User.self) { user in
-                        DetailView(user: user)
+                    
                     }
                 }
+            .navigationDestination(for: User.self) { user in
+                DetailView(user: user)
+        }
             }
             .task {
                 await loadData()
             }
             .navigationTitle("Friendface")
-        }
+            
     }
     
     func loadData() async {
