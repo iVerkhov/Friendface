@@ -5,14 +5,17 @@
 //  Created by Игорь Верхов on 18.09.2023.
 //
 
+import SwiftData
 import SwiftUI
 
+
 struct ContentView: View {
-    
-    @State private var users = [User]()
+    @Environment(\.modelContext) var modelContext
+    @Query(sort: \User.name) private var users: [User]
     
     var body: some View {
         NavigationStack {
+            Text(String(users.count))
             List {
                 ForEach(users) { user in
                     NavigationLink(value: user) {
@@ -24,23 +27,36 @@ struct ContentView: View {
                         }
                     }
                     
-                    }
                 }
-            .navigationDestination(for: User.self) { user in
-                DetailView(user: user)
-        }
-            }
-            .task {
-                await loadData()
             }
             .navigationTitle("Friendface")
-            
+            .navigationDestination(for: User.self) { user in
+                DetailView(user: user)
+            }
+            .toolbar {
+                Button("Reload") {
+                    try? modelContext.delete(model: User.self)
+                    Task {
+                        await loadData()
+                    }
+                }
+            }
+        }
+//        .task {
+//            await loadData()
+//        }
+        
+        
+        
     }
     
     func loadData() async {
         // Don't re-fetch data if we already have it
-        guard users.isEmpty else { return }
+        guard users.isEmpty else { 
+            print("Not empty")
+            return }
         
+        print("Empty")
         guard let url = URL(string: "https://www.hackingwithswift.com/samples/friendface.json") else { print("Invalid Url")
             return
         }
@@ -51,7 +67,13 @@ struct ContentView: View {
             let decoder = JSONDecoder()
             decoder.dateDecodingStrategy = .iso8601
             
-            users = try decoder.decode([User].self, from: data)
+            let fetchedUsers = try decoder.decode([User].self, from: data)
+//            let inserContext = ModelContext(modelContext.container)
+            
+            for user in fetchedUsers {
+                modelContext.insert(user)
+            }
+//            try inserContext.save()
         } catch {
             print("Invalid data")
         }
@@ -60,4 +82,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .modelContainer(for: User.self)
 }

@@ -5,6 +5,7 @@
 //  Created by Игорь Верхов on 19.09.2023.
 //
 
+import SwiftData
 import SwiftUI
 
 struct DetailView: View {
@@ -40,6 +41,13 @@ struct DetailView: View {
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     NaviView(user: user)
+//                    HStack {
+//                        Text("\(user.name),")
+//                        Text("\(user.age)")
+//                        Image(systemName: "circle.fill")
+//                            .font(.system(size: 7))
+//                            .foregroundColor(user.isActive ? .green : .gray)
+//                    }
                 }
             }
 //        }
@@ -47,5 +55,25 @@ struct DetailView: View {
 }
 
 #Preview {
-    DetailView(user: .testUser)
+    do {
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try ModelContainer(for: User.self, configurations: config)
+        let user = User(
+            id: UUID(),
+            isActive: true,
+            name: "John Smith",
+            age: 24,
+            company: "Matrix",
+            email: "johnsmith@matrix.com",
+            address: "Test Adress",
+            about: "About John Smith",
+            registered: Date.now,
+            tags: ["tag 1", "tag 2", "tag 3"],
+            friends: [])
+        return DetailView(user: user)
+            .modelContainer(container)
+    } catch {
+        return Text("Failed to create container: \(error.localizedDescription)")
+    }
+    
 }

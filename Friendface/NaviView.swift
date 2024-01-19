@@ -5,6 +5,7 @@
 //  Created by Игорь Верхов on 19.09.2023.
 //
 
+import SwiftData
 import SwiftUI
 
 struct NaviView: View {
@@ -22,5 +23,12 @@ struct NaviView: View {
 }
 
 #Preview {
-    NaviView(user: User.testUser)
+    do {
+        let config = ModelConfiguration(isStoredInMemoryOnly: true)
+        let container = try ModelContainer(for: User.self, configurations: config)
+        return NaviView(user: .testUser)
+            .modelContainer(container)
+    } catch {
+        return Text("Failed to create container: \(error.localizedDescription)")
+    }
 }
